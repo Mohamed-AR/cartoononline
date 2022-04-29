@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/style-sec.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Cartoon</title>
+    <link rel="icon" type="image/x-icon" href="../images/fav ico.png" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="section2"></div>
+    </section>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid py-4">
+        <a class="navbar-brand" href="/">
+          <img
+            src="../images/ramadan.png"
+            alt="Logo"
+            width="55"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+    <!-- Section -->
+
+    <section class="text-center py-200" id="section-cards">
+      <div class="container">
+        <a href="/">
+          <button class="btn text-white btn-primary fixed-top w-100">
+            Home
+          </button>
+        </a>
+      </div>
+
+      <div>
+        <iframe
+          data-aa="1995529"
+          src="//ad.a-ads.com/1995529?size=970x90"
+          style="
+            width: 970px;
+            height: 90px;
+            border: 0px;
+            padding: 0;
+            overflow: hidden;
+            background-color: transparent;
+          "
+        ></iframe>
+      </div>
+
+      <div class="row" id="cards"></div>
+      <div id="overlay" onclick="off()">
+        <div class="over"></div>
+        <div id="text-0">
+          <iframe
+            id="iframe"
+            src=""
+            frameborder="2"
+            scrolling="no"
+            width="720"
+            height="480"
+            allow="autoplay"
+            sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- End -->
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      const iframe = document.getElementById("iframe");
+
+      const card = document.getElementById("cards");
+
+      for (let i = 1; i <= 15; i++) {
+        card.innerHTML += `
+
+    <div class="col-lg-4 col-md-6 p-4" data-aos="zoom-out-up">
+    <div style="padding: 20px" class="text-center">
+      <div class="card" style="width: 18rem">
+        <img
+          src="../images/worldzone.jpg"
+          class="card-img-top m-auto z-index-1"
+          style="height: 330px"
+        />
+        <button
+          lang="ar"
+          class="btn btn-dark bordered z-index-5 fs-4 py-3 btn-watch"
+          onclick="on()"
+        >
+          <span class="fw-bolder">الحلقة ${i}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+    `;
+      }
+
+      const btn = document.querySelectorAll(".btn-watch");
+      const sec = document.querySelector(".section");
+      btn.forEach((p) => {
+        p.addEventListener("click", () => {
+          setTimeout(() => {
+            sec.style.display = "block";
+          }, 0);
+          setTimeout(() => {
+            sec.style.display = "none";
+          }, 1000);
+
+          // Links World Zone
+
+          const val = Number(p.textContent.trim().slice(7, 9));
+
+          switch (val) {
+            case 1:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=Q8NmkgbeJwRYLhES";
+              break;
+            case 2:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=9NsEenQPOFdMIw4p";
+              break;
+            case 3:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=hoexJ2lQYwcSaBOu";
+              break;
+            case 4:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=pa6IUPG40KWBeXQn";
+              break;
+            case 5:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=sNveq9mHrQVf3pwz";
+              break;
+            case 6:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=On0xLpr5EGMsNt9m";
+              break;
+            case 7:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=z03bJnM9XcPi42vZ";
+              break;
+            case 8:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=guj3qJ8YfKIvtUdG";
+              break;
+            case 9:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=RqTP4ObFihycM9n8";
+              break;
+            case 10:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=YCcvW4d7MOrZL6Pf";
+              break;
+            case 11:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=Ru3YAschNPp0K8WJ";
+              break;
+            case 12:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=zrS7ikBKuECmjdnh";
+              break;
+            case 13:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=38Dm61pAIeUwoMGr";
+              break;
+            case 14:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=4bhfrujkJXTm2EdG";
+              break;
+            case 15:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=fim9oAZlGxhNLcwX";
+              break;
+            case 16:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=KGe1YwaQlOFRsyk5";
+              break;
+            case 17:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=pwhO7kdvKUNiD2TB";
+              break;
+            case 18:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=hg1sPdxFBQ3oqY7W";
+              break;
+            case 19:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=M6FGC9lbTZHKUzXr";
+              break;
+            case 20:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=0l9RBoxCubqTmKJy";
+              break;
+              case 21:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=P3N5w16GVMbXCme4";
+              break;
+              case 22:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=u4h3gAiWslVPCX8p";
+              break;
+              case 23:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=WbxB3pE1v0FVrYok";
+              break;
+              case 24:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=g6fjHlBFnIzmv3RP";
+              break;
+              case 25:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=OoKnUglq3GH8iFrb";
+              break;
+              case 26:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=syfw2pu0IX3YAh5B";
+              break;
+              case 27:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=G2USvXxHCPteifcF";
+              break;
+              case 28:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=SqmhzdbA1Pwkn3rZ";
+              break;
+              case 29:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=hQ2Y8EdJKHDTviMc";
+              break;
+              case 30:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=G6lhdbNq45zL3mwg";
+              break;
+              case 31:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=ziXEZ854WN2f31LA";
+              break;
+            //   case 32:
+            //   iframe.src =
+            //     "";
+            //   break;
+            //   case 33:
+            //   iframe.src =
+            //     "https://www.stardima.net/player/player.php?slug=8rzF27xYQDshW3dk";
+            //   break;
+            //   case 34:
+            //   iframe.src =
+            //     "https://www.stardima.net/player/player.php?slug=Sc4ZMWVoRPxN6Dmr";
+            //   break;
+            //   case 35:
+            //   iframe.src =
+            //     "https://www.stardima.net/player/player.php?slug=VFgtZWl0DsSyqiRX";
+            //   break;
+            //   case 36:
+            //   iframe.src =
+            //     "https://www.stardima.net/player/player.php?slug=JfwQVcWzL6mRbsyA";
+            //   break;
+            //   case 37:
+            //   iframe.src =
+            //     "https://www.stardima.net/player/player.php?slug=VDfM5pSIqrGtje2Q";
+            //   break;
+            //   case 38:
+            //   iframe.src =
+            //     "https://www.stardima.net/player/player.php?slug=sGgf9JqavTmZ2WFc";
+            //   break;
+            //   case 39:
+            //   iframe.src =
+            //     "https://www.stardima.net/player/player.php?slug=z5DSKscqNVJlaoMW";
+            //   break;
+            //   case 40:
+            //   iframe.src =
+            //     "https://www.stardima.net/player/player.php?slug=I7U59tQ10jHaPfYq";
+            //   break;
+            //   case 41:
+            //   iframe.src =
+            //     "https://www.stardima.net/player/player.php?slug=7R8ObinCoQy9BwA6";
+            //   break;
+            //   case 42:
+            //   iframe.src =
+            //     "https://www.stardima.net/player/player.php?slug=i8JR0zXgLmNEFPrY";
+            //   break;
+            //   case 43:
+            //   iframe.src =
+            //     "https://www.stardima.net/player/player.php?slug=itvHAQlg10IcnsLS";
+            //   break;
+            //   case 44:
+            //   iframe.src =
+            //     "https://www.stardima.net/player/player.php?slug=kuV1bzdMof8OUptD";
+            //   break;
+            //   case 45:
+            //   iframe.src =
+            //     "https://www.stardima.net/player/player.php?slug=tlQxzKDYSpr98sW0";
+            //   break;
+
+            default:
+              document.getElementById("overlay").style.display = "none";
+              break;
+          }
+        });
+      });
+
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+      }
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+      }
+
+      overlay.addEventListener("click", () => {
+        const frame = iframe.src;
+        iframe.src = "";
+        iframe.src = frame;
+      });
+
+      AOS.init();
+    </script>
+
+    <script src="../scripts/block.js"></script>
+  </body>
+</html>

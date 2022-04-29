@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+
+  <title>Cartoon</title>
+  <link rel="icon" type="image/x-icon" href="images/fav_ico.png" />
+</head>
+
+<body>
+  <!-- Loader Start -->
+  <section class="section">
+    <div class="section2"></div>
+  </section>
+  <!-- Loader End -->
+
+  <!-- Navbar Start -->
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid py-2">
+      <a class="navbar-brand" href="/">
+        <img src="images/ramadan.png" alt="Logo" width="55" class="d-inline-block align-text-top" />
+      </a>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+          </li>
+          <!-- كارتون -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white text-center" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false" lang="ar">
+              كارتون
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="cartoon/dani.html" lang="ar">داني الشبح</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="cartoon/gemy.html" lang="ar">جيمي نيوترون</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="cartoon/witch.html" lang="ar">الأبوان السحريان</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="cartoon/cat&dog.html" lang="ar">بسبس بوبي</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="cartoon/angelo.html" lang="ar">يحيا أنجلو</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="cartoon/gumbol.html" lang="ar">عالم غامبول</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="cartoon/worldzone.html" lang="ar">عالم الطباشير</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="cartoon/flapjack.html" lang="ar">فلاب جاك</a>
+              </li>
+              <li>
+                <a class="dropdown-item disabled" href="cartoon" lang="ar">المراهقه الأليه</a>
+              </li>
+            </ul>
+
+          </li>
+
+          <!-- قصص الانبياء -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white text-center" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false" lang="ar">
+              قصص الأنبياء
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="muslim/season-1.html" lang="ar">الموسم الأول</a>
+              </li>
+              <!-- <li>
+                  <a class="dropdown-item" href="cartoon/gemy.html" lang="ar"
+                    >جيمي نيوترون</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cartoon/witch.html" lang="ar"
+                    >الأبوان السحريان</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cartoon/cat&dog.html" lang="ar"
+                    >بسبس بوبي</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="cartoon/angelo.html" lang="ar"
+                    >يحيا أنجلو</a
+                  >
+                </li> -->
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchbar"
+            onkeyup="search_bar()" />
+          <button class="btn btn-outline-success" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navbar End -->
+
+  <!-- Section Start -->
+
+  <section class="sec">
+    <img src="images/stars.png" alt="stars" id="stars" />
+    <img src="images/moon.png" alt="moon" id="moon" />
+    <img src="images/mountains_behind.png" alt="mountains_behind" id="mountains_behind" />
+    <h2 id="text">Welcome</h2>
+    <a lang="ar" href="#sec-card" id="btn" class="fw-bolder btns">الكارتونات</a>
+    <img src="images/mountains_front.png" alt="mountains_front" id="mountains_front" />
+  </section>
+
+  <!-- Section End -->
+
+  <!-- Slider Start -->
+  <article id="sec" class="py-100 text-center">
+    <iframe data-aa="1994101" src="//ad.a-ads.com/1994101?size=300x250" style="
+          width: 300px;
+          height: 250px;
+          border: 0px;
+          padding: 0;
+          overflow: hidden;
+          background-color: transparent;
+        "></iframe>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/dani.jpg" class="d-block w-40 m-auto" alt="dani" />
+          <div class="carousel-caption d-none d-md-block text-warning fw-bolder">
+            <h5 lang="ar" class="text-black bg-warning w-25 m-auto p-3 rounded">
+              داني الشبح
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/gemy.jpg" class="d-block w-50 m-auto" alt="gemy" />
+          <div class="carousel-caption d-none d-md-block">
+            <h3 lang="ar" class="text-black bg-warning w-25 m-auto p-3 rounded">
+              جيمي نيوترون
+            </h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/witch.webp" class="d-block w-50 m-auto" alt="witch" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 lang="ar" class="text-black bg-warning w-25 m-auto p-3 rounded">
+              الأبوان السحريان
+            </h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </article>
+  <!-- Slider 2 End -->
+
+  <!-- Cards Start -->
+
+  <article class="container-fluid py-100 text-center bg-primary" id="sec-card">
+    <div class="row">
+      <div class="col-lg-12 col-md-5 col-sm-3 hr">
+        <h2 lang="ar" class="text-white">الكارتون</h2>
+        <div class="heading-line mb-5"></div>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <div class="row text-white py-5" id="loop">
+        
+      </div>
+    </div>
+  </article>
+
+  <!-- Cards End -->
+
+  <!-- Footer Start -->
+
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <h3 class="py-3">Our Location</h3>
+          <p class="fw-bold fs-5">Alexandria - Egypt</p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h3 class="py-3">Contact Us</h3>
+          <p class="fw-bold fs-5">+201278012971</p>
+          <p class="fw-bold fs-5">mohamed.rashed.work@gmail.com</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/LandsXblack" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mohamed-ali-rashed" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://wa.me/+201278012971" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <!-- <h4 class="my-4 text-dark fw-bolder" lang="ar">
+              لأضافه كرتون معين يرجي التواصل معي علي الواتساب
+            </h4> -->
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h3 class="py-3">Opening Hours</h3>
+          <p class="fw-bold fs-5">All Time</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="copyright fw-bolder fs-5">
+        © Copyright 2022 - Designed by Mohamed Ali
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer End -->
+
+  <!-- Script Start -->
+  <script src="scripts/script.js"></script>
+  <script src="scripts/block.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- Script End -->
+</body>
+
+</html>
+
+
+<!-- Wallet Coinomi Security -->
+<!-- horse buddy crawl fat code spot under uncle category since speak tragic luxury
+monster wall behave tuna awful trouble minimum ladder enact patch saddle -->

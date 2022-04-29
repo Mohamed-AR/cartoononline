@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/style-sec.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Cartoon</title>
+    <link rel="icon" type="image/x-icon" href="../images/fav ico.png" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="section2"></div>
+    </section>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid py-4">
+        <a class="navbar-brand" href="/">
+          <img
+            src="../images/ramadan.png"
+            alt="Logo"
+            width="55"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+      </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+    <!-- Section -->
+
+    <section class="text-center py-200" id="section-cards">
+      <div class="container">
+        <a href="/">
+          <button class="btn text-white btn-primary fixed-top w-100">
+            Home
+          </button>
+        </a>
+        <!-- <a href="/cartoon/dani.html"
+        ><button class="btn text-black btn-warning" lang="ar">
+          الموسم الأول
+        </button></a
+      >
+        <a href=""
+          ><button class="btn text-white btn-primary disabled" lang="ar">
+            الموسم الثاني
+          </button></a
+        > -->
+      </div>
+
+      <div>
+        <iframe
+          data-aa="1995529"
+          src="//ad.a-ads.com/1995529?size=970x90"
+          style="
+            width: 970px;
+            height: 90px;
+            border: 0px;
+            padding: 0;
+            overflow: hidden;
+            background-color: transparent;
+          "
+        ></iframe>
+      </div>
+
+      <div class="row" id="cards"></div>
+      <div id="overlay" onclick="off()">
+        <div class="over"></div>
+        <div id="text-0">
+          <iframe
+          id="iframe"
+            src=""
+            frameborder="2"
+            scrolling="no"
+            width="720"
+            height="480"
+            allow="autoplay"
+            sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- End -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      const iframe = document.getElementById("iframe");
+      const card = document.getElementById("cards");
+
+      for (let i = 1; i <= 20; i++) {
+        card.innerHTML += `
+
+    <div class="col-lg-4 col-md-6 p-4" data-aos="zoom-out-up">
+    <div style="padding: 20px" class="text-center">
+      <div class="card" style="width: 18rem">
+        <img
+          src="../images/dani.jpg"
+          class="card-img-top m-auto z-index-1"
+          style="height: 330px"
+        />
+        <button
+          lang="ar"
+          class="btn btn-dark bordered z-index-5 fs-4 py-3 btn-watch"
+          onclick="on()"
+        >
+          <span class="fw-bolder">الحلقة ${i}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+    `;
+      }
+
+      const btn = document.querySelectorAll(".btn-watch");
+      const sec = document.querySelector(".section");
+      btn.forEach((p) => {
+        p.addEventListener("click", () => {
+          setTimeout(() => {
+            sec.style.display = "block";
+          }, 0);
+          setTimeout(() => {
+            sec.style.display = "none";
+          }, 1000);
+
+          // Links Dani
+
+          const val = Number(p.textContent.trim().slice(7, 9));
+
+          switch (val) {
+            case 1:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=6FrwJOhjeDGMcg80";
+              break;
+            case 2:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=htDOmzwaQukofE2W";
+              break;
+            case 3:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=hbEFDN7kosqecV0z";
+              break;
+            case 4:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=VLrbolf5KhtMEaBd";
+              break;
+            case 5:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=g25McUQW3H0ymCPO";
+              break;
+            case 6:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=DutI6Zdl5FLNCg4R";
+              break;
+            case 7:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=E83rp6wJnBh90cqZ";
+              break;
+            case 8:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=uLdZblqE9JARiWam";
+              break;
+            case 9:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=06r7So3qBFmyJzIt";
+              break;
+            case 10:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=eUyiApaEVLDYTOCc";
+              break;
+            case 11:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=3maGy2xJSDNpPTe8";
+              break;
+            case 12:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=y3gbB0ifeSWAlrVq";
+              break;
+            case 13:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=IdaXgKPbCYQSAw5k";
+              break;
+            case 14:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=7J35br2MTwHnZ18R";
+              break;
+            case 15:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=il4k1NxPcAeKdf2w";
+              break;
+            case 16:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=C9lIxsy31K8rWH0d";
+              break;
+            case 17:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=xfm9awryWR0iQqLt";
+              break;
+            case 18:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=h41p6uywPzFVabZx";
+              break;
+            case 19:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=PwXSziHu3LMO8raD";
+              break;
+            case 20:
+              iframe.src =
+                "https://www.stardima.net/player/player.php?slug=sq1CL7kNtByrzTam";
+              break;
+
+            default:
+              document.getElementById("overlay").style.display = "none";
+              break;
+          }
+        });
+      });
+
+      function on() {
+        document.getElementById("overlay").style.display = "block";
+      }
+      function off() {
+        document.getElementById("overlay").style.display = "none";
+      }
+
+      overlay.addEventListener("click", () => {
+        const frame = iframe.src;
+        iframe.src = "";
+        iframe.src = frame;
+      });
+
+      // Search Bar Enable
+
+      // function search_bar() {
+      //   let input = document.getElementById("searchbar").value;
+      //   input = input.toLowerCase();
+      //   console.log(input);
+      //   let x = document.getElementsByClassName("test");
+
+      //   for (let i = 0; i < x.length; i++) {
+      //     const element = x[i];
+      //     if (!element.innerHTML.toLowerCase().includes(input)) {
+      //       element.style.display = "none";
+      //     } else {
+      //       element.style.display = "list-item";
+      //     }
+      //   }
+      // }
+
+      AOS.init();
+    </script>
+
+    <script src="../scripts/block.js"></script>
+  </body>
+</html>
